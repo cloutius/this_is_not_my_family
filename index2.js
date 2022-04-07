@@ -34,7 +34,7 @@ $(function(){
 
 		// window too small, should give a notice
 		if( vw < 1200 && vh < 1200 ) {
-			alert('Your browser window/viewport is too small. At least 1200 pixels width or height are needed. Try resizing your window or zooming out.');
+			alert('To see non-cropped version go to: https://cloutius.github.io/this_is_not_my_family/');
 			return;
 		};
 
