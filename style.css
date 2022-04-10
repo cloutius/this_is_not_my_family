@@ -1,40 +1,41 @@
-body {
+html {
 	background-image: url("images/tile.png");
   background-repeat: repeat;
   overflow: hidden; /* Hide scrollbars */
   user-select: none;
 }
-
+body {
+	margin: 0;
+    max-width: 90%;
+    max-height: 90%;
+}
+#ad{}
+#ad img{
+	position:absolute;
+	max-width: 40%;
+    max-height: 40%;
+}
+#static{}
+#static img {
+	position:absolute;
+		 margin-top:20%;
+		 margin-left: 40%;
+		 z-index: 1000;
+		 height: 30vh;
+		 width: 45vh;
+}
 #treasure {}
 	#treasure img {
 		position: absolute;
 		z-index: 69;
 		animation: float 6s ease-in-out infinite;
+		 left:0px;
+		 top:0px;
+		 max-width: 40%;
+    max-height: 40%;
 	}
 	#treasure img:hover {
 		transform: scale(1.05, 1.05);
 		filter: drop-shadow(0 0 8px rgba(0,0,0,0.8));
 		animation: float 6s ease-in-out infinite;
 	}
-
-#chest {
-	position: absolute;
-	background: url('welcome2.gif');
-	background-repeat: no-repeat;
-	z-index:1000;
-}
-	#chest div.username {
-		position: absolute;
-		width: 100%;
-		bottom: 34px;
-		left: 0;
-		text-align: center;
-		color: transparent;
-		font-family: 'Verdana', 'Arial', sans-serif;
-		font-weight: bold;
-		opacity: 1;
-		z-index: 9001;
-	}
-		#chest div.username.fadeout {
-			opacity: 0;
-		}

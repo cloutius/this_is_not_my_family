@@ -32,12 +32,6 @@ $(function(){
 		var vw = $(window).width();
 		var vh = $(window).height();
 
-		// window too small, should give a notice
-		if( vw < 1200 && vh < 1200 ) {
-			alert('To see non-cropped version go to: https://cloutius.github.io/this_is_not_my_family/');
-			return;
-		};
-
 		// position of the empty rectangle
 		var rw = 0;
 		var rh = 0;
